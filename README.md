@@ -13,16 +13,22 @@ The following files from the initial dataset is used:
   6. ***train/y_train.txt*** - activity (from 1 to 6) for each measurement from the train set
   7. ***test/y_test.txt*** - activity (from 1 to 6) for each measurement from the test set
 
+Merges the training and the test sets to create one data set.
+Extracts only the measurements on the mean and standard deviation for each measurement. 
+Uses descriptive activity names to name the activities in the data set
+Appropriately labels the data set with descriptive variable names. 
+From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+
 
 ## How script works
 Script involves the following stages:
 
-1. Downloads to R ids and descriptions for features being measured in experiment
+1. Downloads to R ids and descriptions for features being measured in experiment from file ***features.txt***.
 
 2. Independently loads complete data for train and test sets. Let's revoke these loading process considering train set:
-    a. Firstly loads the measurements from X_train.txt as a data frame 
-    b. For these data frame column names is updated to be more user friendly using features description loaded on the previous stage.
-    c. activity labels and subjects for measurements are also loaded from files and added to data frame as a separated columns.
+    a. Firstly loads the measurements from ***X_train.txt*** as a data frame 
+    b. For these data frame column names are updated to be more user friendly using features description loaded on the previous stage. (**STEP 5**: *Appropriately label the data set with descriptive variable names* of Course Project
+    c. activity labels and subjects for measurements are also loaded from files ***train/y_train.txt*** and ***train/subject_train.txt*** and added to data frame as a separated columns.
   
   Similar steps is being made for test dataset and finally 2 rows of 2 data frames are merged together to form are data frame with complete data (STEP 1 of assignment)
 
