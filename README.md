@@ -16,7 +16,9 @@ The following files from the initial dataset is used:
 
 ## How script works
 Script involves the following stages:
+
 1. Downloads to R ids and descriptions for features being measured in experiment
+
 2. Independently loads complete data for train and test sets. Let's revoke these loading process considering train set:
     a. Firstly loads the measurements from X_train.txt as a data frame 
     b. For these data frame column names is updated to be more user friendly using features description loaded on the previous stage.
