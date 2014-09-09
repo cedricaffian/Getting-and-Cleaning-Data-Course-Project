@@ -1,4 +1,4 @@
-Project for Coursera course **"Getting and Cleaning Data"**
+**"Getting and Cleaning Data"** Course Project
 ========================================
 
 ## Initial data for research
@@ -6,13 +6,15 @@ The script is invented to analyze the data from [UCI HAR Dataset](https://d396qu
 
 The following files from the initial dataset is used:
   1. ***features.txt*** - includes the descriptions for features measured
-  2. **train/X_train.txt** - includes the measurements of the features in train set (one row - 1 measurement of 561 features)
-  3. **test/X_test.txt** - includes the measurements of the features in test set
-  4. **train/subject_train.txt** - subject for each measurement from the train set
-  5. **test/subject_test.txt** - subject for each measurement from the test set
-  6. **train/y_train.txt** - activity (from 1 to 6) for each measurement from the train set
-  7. **test/y_test.txt** - activity (from 1 to 6) for each measurement from the test set
+  2. ***train/X_train.txt*** - includes the measurements of the features in train set (one row - 1 measurement of 561 features)
+  3. ***test/X_test.txt*** - includes the measurements of the features in test set
+  4. ***train/subject_train.txt*** - subject for each measurement from the train set
+  5. ***test/subject_test.txt*** - subject for each measurement from the test set
+  6. ***train/y_train.txt*** - activity (from 1 to 6) for each measurement from the train set
+  7. ***test/y_test.txt*** - activity (from 1 to 6) for each measurement from the test set
 
+
+## How script works
 Script involves the following stages:
 1. Downloads to R ids and descriptions for features being measured in experiment
 2. Independently loads complete data for train and test sets. Let's revoke these loading process considering train set:
