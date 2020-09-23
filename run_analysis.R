@@ -35,6 +35,7 @@ dataset.filtered$activitylabel <- factor(dataset.filtered$activity, labels= c("W
 features.colnames = grep("std\\(\\)|mean\\(\\)", column.names, value=TRUE)
 dataset.melt <-melt(dataset.filtered, id = c('activitylabel', 'subject'), measure.vars = features.colnames)
 dataset.tidy <- dcast(dataset.melt, activitylabel + subject ~ variable, mean)
-                                         
+
 #creating a tidy dataset file  
 write.table(dataset.tidy, file = "tidydataset.txt" row.names = FALSE)
+ 
